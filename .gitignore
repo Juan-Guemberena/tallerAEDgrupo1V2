@@ -1,0 +1,25 @@
+config.yml
+*.csv
+*.log
+.DS_Store
+node_modules
+bower_components
+.sass-cache
+config/settings_data.json
+tmp/**
+coverage/**
+browser-sync.config.local.js
+styles-issues-report.json
+# IDE files
+.idea/
+
+# Visual Code
+.vscode/
+
+# dist folder
+dist/*
+img-migration/*
+.classpath
+.project
+/bin
+/bin/*
