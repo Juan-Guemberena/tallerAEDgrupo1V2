@@ -1,3 +1,17 @@
+/* Grupo 1
+ * 
+ * Bono, Ramiro.
+ * Moreno Rodriguez, Federico R.
+ * Guemberena, Juan Cruz
+ * Firbeda, Tomas
+ * 
+ * Mails:
+ * ramiro.cba@gmail.com
+ * morenorfederico21@gmail.com
+ * chinoguembe@gmail.com
+ * firbedatomasf@gmail.com
+ * */
+
 package test;
 
 import java.util.ArrayList;
@@ -85,3 +99,23 @@ public class Main {
 	}//Fin método main.
 
 }//Fin clase main.
+
+/* 
+
+A) Nosotros creemos que, a los fines practicos, la solucion planteada en la presente implementacion de codigo sirve como un modelo valido para
+   explicar el comportamiento de una linea de boxes de atencion al cliente. Consideramos que, desde el punto de vista del funcionamiento, dicho
+   modelo lo implementa correctamente, salvando la pseudoaleatoriedad que prima en la presente solucion y que dista de una situacion de la vida real.
+
+B) A la hora de comparar 2 implementaciones distintas, ya sea cola unica o colas independientes, creemos que es necesario poder realizar una medicion
+   del tiempo que demora en procesar N elementos una y otra, a los fines de comparar y determinar que implementacion es la mas optima.
+   Sin dudas, el modelo actual prescinde de una variable tiempo que permita realizar dicha simulacion y medicion de ambas implementaciones.
+   Dicha variable deberia estar definida a nivel de Nodo como un atributo de clase.
+   
+C) Sin duda, agregarle prioridad a la solucion propuesta supone un cambio en el modelo actual. Es posible implementarla mediante la
+   estructura de datos llamada "Cola con prioridad". Clases que representen la estructura de datos "Cola con prioridad" deberian ser añadidas.
+  
+D) Ademas de java.util.Random, otra alternativa disponible es java.Math.random o java.security.SecureRandom, la cual provee un generador de numeros
+   aleatorios criptograficamente mas robusto. Utilizamos java.util.Random ya que fue la mas sencilla de implementar, a diferencia de SecureRandom
+   que requeria de mayor complejidad para su implementacion. Ademas, este modelo no justifica el uso de un generador tan potente.
+    
+ */
