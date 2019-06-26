@@ -2,7 +2,6 @@ package test;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
 import modelo.*;
 import vista.Menu;
 import util.RandomUtils;
@@ -52,24 +51,21 @@ public class Main {
 				while (aux.isEmpty()) {
 					aux = cajas.get(RandomUtils.generarNumeroAleatorio(INDICE_CAJAS));
 				}
-
-				for (int i = 0; i < INDICE_CAJAS; i++)
-					if ((cajas.get(i).equals(aux)) && (cajas.get(i).isEmpty())) {
-						System.out.println("\n[BOX" + " " + i + "] Vacio");
-
-					} else {
-						for (i = 0; i < INDICE_CAJAS; i++) {
+						for (int i = 0; i < INDICE_CAJAS; i++) {
 							if (cajas.get(i).equals(aux) && !(cajas.get(i).isEmpty()))
 								System.out.printf("\n\n[BOX" + " " + i + "]: Se quito '%s'", aux.dequeue());
+								if (aux.size()== 0){
+									System.out.println("\n[BOX" + " " + i + "] Vacio");
+									break;
+								}
 
-						}
 					}
 
 
 						if (cajas.get(0).isEmpty() && cajas.get(1).isEmpty() && cajas.get(2).isEmpty() && cajas.get(3).isEmpty())
 							bandera = false;
 					}
-				while (bandera) ;
+				while (bandera);
 
 			
 			break;
