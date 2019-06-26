@@ -43,7 +43,7 @@ public class Main {
 				cajas.get(i).listar();
 			}
 			
-			System.out.println("\n\nComenzando Simulación");
+			System.out.println("\n\nComenzando Simulaciï¿½n");
 			do {
 				Box aux = new Box();
 
@@ -55,12 +55,12 @@ public class Main {
 
 				for (int i = 0; i < INDICE_CAJAS; i++)
 					if ((cajas.get(i).equals(aux)) && (cajas.get(i).isEmpty())) {
-						System.out.println("\n[BOX" + " " + i + "] Vacío");
+						System.out.println("\n[BOX" + " " + i + "] Vacio");
 
 					} else {
 						for (i = 0; i < INDICE_CAJAS; i++) {
 							if (cajas.get(i).equals(aux) && !(cajas.get(i).isEmpty()))
-								System.out.printf("\n\n[BOX" + " " + i + "]: Se quitó '%s'", aux.dequeue());
+								System.out.printf("\n\n[BOX" + " " + i + "]: Se quito '%s'", aux.dequeue());
 
 						}
 					}
@@ -80,6 +80,6 @@ public class Main {
 		default:
 			break;
 		}
-	}//Fin método main.
+	}//Fin metodo main.
 
 }//Fin clase main.
