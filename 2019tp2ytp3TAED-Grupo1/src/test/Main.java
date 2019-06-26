@@ -43,7 +43,7 @@ public class Main {
 				cajas.get(i).listar();
 			}
 			
-			System.out.println("\n\nComenzando Simulaci�n");
+			System.out.println("\n\nComenzando Simulacion");
 			do {
 				Box aux = new Box();
 
